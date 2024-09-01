@@ -1,0 +1,42 @@
+$primary-color: #4CAF50;
+$secondary-color: #333;
+$font-stack: 'Roboto', sans-serif;
+$light-gray: #f4f4f4;
+$dark-gray: #555;
+$white: #fff;
+$body-bg-color: #fafafa;
+$header-bg-color: #282c34;
+$link-color: #007BFF;
+$border-radius: 5px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin box-shadow($color) {
+    box-shadow: 0 2px 4px rgba($color, 0.2), 0 6px 12px rgba($color, 0.2);
+  }
+  
+
+  .about {
+    padding: 60px 20px;
+    background-color: $white;
+    text-align: center;
+  
+    h2 {
+      color: $secondary-color;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      color: $dark-gray;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+  

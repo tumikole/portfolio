@@ -1,0 +1,18 @@
+[build]
+  base = "frontend"  # Ensure this is correct; this is your project's root folder where package.json is located
+  publish = "build"  # This is where React outputs the build files
+  command = "npm run build"  # This is the command to create the production build
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"  # This is optional, for performance auditing
+
+[context.production]
+  publish = "build"  # This should match the output directory from the build command
+  command = "npm run build"
+  environment = { NODE_VERSION = "16.15.1" }  # Ensure you are using a compatible Node version
+
+[context.deploy-preview]
+  publish = "build"  # Same as above for deploy previews
+
+[context.deploy-preview.environment]
+  NOT_PRIVATE_ITEM = "not so secret"
