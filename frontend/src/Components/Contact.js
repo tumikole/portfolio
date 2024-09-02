@@ -4,17 +4,34 @@ import Resume from '../assets/pdf/Ramollo Samuel Tumisan (3).pdf'
 
 const Contact = () => (
   <section className="contact">
-    <h2>Contact Me</h2>
-    
+
     <div className="social-links">
       <h3>Connect with me on social media:</h3>
       <ul>
-        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li>
+          <div>
+            <box-icon name='linkedin' size="xm" type='logo' color='#0077b5' ></box-icon>
+          </div>
+          <a href="https://www.linkedin.com/in/samuel-ramollo-1aa8a2202/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li>
+          <div>
+            <box-icon name='github' size="xm" type='logo' color='#0077b5' ></box-icon>
+          </div>
+          <a href="https://github.com/tumikole/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li>
+          <div>
+            <box-icon name='facebook' size="xm" type='logo' color='#0077b5' ></box-icon>
+          </div>
+          <a href="https://www.facebook.com/profile.php?id=100072792697861" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li>
+          <div>
+            <box-icon name='whatsapp' size="xm" type='logo' color='#0077b5' ></box-icon>
+          </div>
+          <a href="https://wa.me/0637986637" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+
       </ul>
     </div>
-    
+
     <div className="resume-download">
       <h3>Want to know more?</h3>
       <p>You can download my resume to get detailed information about my skills and experience.</p>
