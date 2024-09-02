@@ -5,12 +5,15 @@ import Resume from '../assets/pdf/Ramollo Samuel Tumisan (3).pdf'
 const Contact = () => (
   <section className="contact">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    
+    <div className="social-links">
+      <h3>Connect with me on social media:</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      </ul>
+    </div>
     
     <div className="resume-download">
       <h3>Want to know more?</h3>
