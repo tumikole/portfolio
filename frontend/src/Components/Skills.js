@@ -6,7 +6,6 @@ const skills = [
   { name: 'Playwright Framework (UI End-to-End Testing)', level: 90 },
   { name: 'JavaScript Programming Language', level: 80 },
   { name: 'Reporting and Documentation', level: 75 },
-  { name: 'Writing Reports', level: 70 },
   { name: 'React JS', level: 80 },
   { name: 'Redux', level: 70 },
   { name: 'Node JS and Express', level: 75 },
