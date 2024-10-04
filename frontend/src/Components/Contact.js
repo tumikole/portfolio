@@ -18,11 +18,12 @@ const Contact = () => (
             <box-icon name='github' size="xm" type='logo' color='#0077b5' ></box-icon>
           </div>
           <a href="https://github.com/tumikole/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li>
+        {/* <li>
           <div>
             <box-icon name='facebook' size="xm" type='logo' color='#0077b5' ></box-icon>
           </div>
-          <a href="https://www.facebook.com/profile.php?id=100072792697861" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <a href="https://www.facebook.com/profile.php?id=100072792697861" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li> */}
         <li>
           <div>
             <box-icon name='whatsapp' size="xm" type='logo' color='#0077b5' ></box-icon>
