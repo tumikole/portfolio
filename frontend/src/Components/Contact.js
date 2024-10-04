@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Contact.scss';
-import Resume from '../assets/pdf/Ramollo Samuel Tumisan (3).pdf'
+import Resume from '../assets/pdf/Ramollo Samuel Tumisan.pdf'
 
 const Contact = () => (
   <section className="contact">
