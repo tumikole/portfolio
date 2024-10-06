@@ -1,53 +1,40 @@
-$primary-color: #4CAF50;
-$secondary-color: #333;
-$font-stack: 'Roboto', sans-serif;
-$light-gray: #f4f4f4;
-$dark-gray: #555;
-$white: #fff;
-$body-bg-color: #fafafa;
-$header-bg-color: #282c34;
-$link-color: #007BFF;
-$border-radius: 5px;
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin box-shadow($color) {
-  box-shadow: 0 2px 4px rgba($color, 0.2), 0 6px 12px rgba($color, 0.2);
-}
-
 .contact {
-  text-align: center;
-  padding: 2rem;
   background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
 
   .social-links {
     margin-bottom: 2rem;
 
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
     ul {
       list-style: none;
       padding: 0;
-      
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
       li {
-        display: inline-block;
-        margin: 0 10px;
+        margin: 0 1rem;
+
+        div {
+          display: inline-block;
+          margin-right: 0.5rem;
+        }
 
         a {
-          text-decoration: none;
+          font-size: 1.2rem;
           color: #0077b5;
-          font-weight: bold;
+          text-decoration: none;
           transition: color 0.3s ease;
 
           &:hover {
-            color: #005582;
+            color: #0056b3;
           }
         }
       }
@@ -55,67 +42,67 @@ $border-radius: 5px;
   }
 
   .resume-download {
-    margin-top: 2rem;
-
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    
     p {
-      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
     }
 
     .resume-button {
-      padding: 0.75rem 1.5rem;
-      background-color: #0077b5;
+      background-color: #007bff;
       color: #fff;
       border: none;
-      border-radius: $border-radius;
-      cursor: pointer;
+      border-radius: 5px;
+      padding: 0.75rem 1.5rem;
       font-size: 1rem;
-      transition: background-color 0.3s ease;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
 
       &:hover {
-        background-color: #005582;
+        background-color: #0056b3;
+        transform: translateY(-2px);
       }
     }
   }
 }
 
+// Media Queries
 @media (max-width: 768px) {
   .contact {
-    padding: 1.5rem;
+    padding: 2rem 1rem;
+
+    h3 {
+      font-size: 2rem;
+    }
 
     .social-links {
-      h3 {
-        font-size: 1.25rem;
-      }
-
       ul {
-        li {
-          margin: 0 5px;
-          div{
+        flex-direction: column; // Stack the social links vertically
+        align-items: center; // Center the items
 
-            box-icon{
-              padding: 12px;
-            }
-          }
-          a {
-            font-size: 0.9rem;
-          }
+        li {
+          margin: 0.5rem 0; // Add vertical margin for spacing
         }
       }
     }
 
     .resume-download {
-      h3 {
-        font-size: 1.25rem;
+      p {
+        font-size: 0.9rem; // Slightly smaller text on mobile
       }
 
       .resume-button {
-        padding: 0.65rem 1.3rem;
-        font-size: 0.9rem;
+        font-size: 0.9rem; // Smaller button text
+        padding: 0.5rem 1rem; // Adjust padding
       }
     }
   }
@@ -123,33 +110,17 @@ $border-radius: 5px;
 
 @media (max-width: 480px) {
   .contact {
-    padding: 1rem;
-
-    .social-links {
-      h3 {
-        font-size: 1rem;
-      }
-
-      ul {
-        li {
-          display: block;
-          margin: 10px 0;
-
-          a {
-            font-size: 0.8rem;
-          }
-        }
-      }
+    h3 {
+      font-size: 1.75rem; // Further reduce font size for smaller devices
     }
 
     .resume-download {
-      h3 {
-        font-size: 1rem;
+      p {
+        font-size: 0.8rem; // Further reduce text size
       }
 
       .resume-button {
-        padding: 0.55rem 1rem;
-        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem; // Reduce button padding
       }
     }
   }

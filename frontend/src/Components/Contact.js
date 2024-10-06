@@ -6,7 +6,8 @@ const Contact = () => (
   <section className="contact">
 
     <div className="social-links">
-      <h3>Connect with me on social media:</h3>
+      <h3 className='mainHeader'>Connect with me on social media:</h3>
+      <div className='container'>
       <ul>
         <li>
           <div>
@@ -18,12 +19,7 @@ const Contact = () => (
             <box-icon name='github' size="xm" type='logo' color='#0077b5' ></box-icon>
           </div>
           <a href="https://github.com/tumikole/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        {/* <li>
-          <div>
-            <box-icon name='facebook' size="xm" type='logo' color='#0077b5' ></box-icon>
-          </div>
-          <a href="https://www.facebook.com/profile.php?id=100072792697861" target="_blank" rel="noopener noreferrer">Facebook</a>
-          </li> */}
+       
         <li>
           <div>
             <box-icon name='whatsapp' size="xm" type='logo' color='#0077b5' ></box-icon>
@@ -31,10 +27,11 @@ const Contact = () => (
           <a href="https://wa.me/0637986637" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
 
       </ul>
+      </div>
     </div>
 
     <div className="resume-download">
-      <h3>Want to know more?</h3>
+      <h3 className='mainHeader'>Want to know more?</h3>
       <p>You can download my resume to get detailed information about my skills and experience.</p>
       <a href={Resume} download="Ramollo Samuel">
         <button className="resume-button">Download Resume</button>

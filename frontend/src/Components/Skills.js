@@ -9,14 +9,14 @@ const skills = [
   { name: 'React JS', level: 80 },
   { name: 'Redux', level: 70 },
   { name: 'Node JS and Express', level: 75 },
-  { name: 'Problem-solving', level: 85 },
+  // { name: 'Problem-solving', level: 85 },
   { name: 'API / HTTP Request Programming', level: 80 },
   { name: 'Database Design and Use', level: 75 },
 ];
 
 const Skills = () => (
   <section className="skills">
-    <h2>My Skills</h2>
+    <h3 className='mainHeader'>My Skills</h3>
     <div className="skills-container">
       {skills.map((skill, index) => (
         <div key={index} className="skill">

@@ -3,7 +3,8 @@ import './styles/About.scss';
 
 const About = () => (
   <section className="about">
-    <h2>About Me</h2>
+    <h3 className='mainHeader'>About Me</h3>
+    <div className='container'>
     <p>
       I am a dedicated fullstack developer and QA engineer with a strong passion for building scalable web applications and ensuring their quality through rigorous testing. 
     </p>
@@ -16,6 +17,7 @@ const About = () => (
     <p>
       Outside of work, I enjoy learning about new technologies, contributing to open-source projects, and exploring the latest trends in web development and testing.
     </p>
+    </div>
   </section>
 );
 

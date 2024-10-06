@@ -1,53 +1,87 @@
-$primary-color: #4CAF50;
-$secondary-color: #333;
-$font-stack: 'Roboto', sans-serif;
-$light-gray: #f4f4f4;
-$dark-gray: #555;
-$white: #fff;
-$body-bg-color: #fafafa;
-$header-bg-color: #282c34;
-$link-color: #007BFF;
-$border-radius: 5px;
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  @mixin box-shadow($color) {
-    box-shadow: 0 2px 4px rgba($color, 0.2), 0 6px 12px rgba($color, 0.2);
+  // Styling the image container
+  .home__image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
-  .home {
-    display: flex;
+  // Styling the bio section
+  .home__bio {
+    text-align: left;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: $body-bg-color;
-  
-    &__image {
-      border-radius: 50%;
+    text-align: center;
+
+    .home__image {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      width: 200px;
+      height: 200px;
+    }
+
+    .home__bio {
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
+
+    .home__image {
       width: 150px;
       height: 150px;
-      margin-bottom: 20px;
-      border: 5px solid $primary-color;
     }
-  
-    &__bio {
-      max-width: 600px;
-      text-align: center;
-  
+
+    .home__bio {
       h2 {
-        color: $secondary-color;
-        font-size: 2rem;
-        margin-bottom: 10px;
+        font-size: 1.8rem;
+        text-align: center;
+
       }
-  
+
       p {
-        color: $dark-gray;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+        text-align: center;
+
       }
     }
   }
-  
+}
