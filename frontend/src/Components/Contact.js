@@ -30,8 +30,8 @@ const Contact = () => (
       </div>
     </div>
 
-    <div className="resume-download">
       <h3 className='mainHeader'>Want to know more?</h3>
+    <div className="resume-download">
       <p>You can download my resume to get detailed information about my skills and experience.</p>
       <a href={Resume} download="Ramollo Samuel">
         <button className="resume-button">Download Resume</button>
