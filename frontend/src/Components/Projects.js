@@ -9,7 +9,7 @@ const ProjectCard = ({ title, imgSrc, description, link, role }) => {
       <h3>{title}</h3>
       <img src={imgSrc} className="img-fluid" alt="" />
       <p>
-        <span className='role'>QA: Manual and end-to-end automated testing</span>
+        <span className='role'><b>QA: Manual and end-to-end automated testing</b></span>
         <br/>
         <br/>
         <span>{description}</span>
