@@ -7,7 +7,9 @@ const ProjectCard = ({ title, imgSrc, description, link, role }) => {
   return (
     <div className="project-card">
       <h3>{title}</h3>
+      <div className='img-container'>
       <img src={imgSrc} className="img-fluid" alt="" />
+      </div>
       <p>
         <span className='role'><b>QA: Manual and end-to-end automated testing</b></span>
         <br/>
