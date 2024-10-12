@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -12,26 +12,35 @@ code {
     monospace;
 }
 
-.mainHeader{
-  font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1.5rem;
+.mainHeader {
+  font-size    : 2.5rem;
+  color        : #333;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
 }
 
-.container{
+.pre-tech-header {
+  margin-top: 1.5rem;
+
+}
+
+.container {
   background-color: #f5f5f5;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  padding         : 4rem 2rem;
+  max-width       : 1200px;
+  margin          : 0 auto;
+  border-radius   : 10px;
+  box-shadow      : 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align      : center;
 }
 
 @media (max-width: 768px) {
-  .mainHeader{
-    font-size: 1.5rem;
-      color: #333;
-      margin-bottom: 1.5rem !important;
+  .mainHeader {
+    font-size    : 1.5rem;
+    color        : #333;
+    margin-bottom: 1.5rem !important;
+    margin-top   : 1.5rem;
+
   }
 }

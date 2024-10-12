@@ -25,7 +25,7 @@ const PersonalProjects = () => {
 
   return (
     <div className="projects-container">
-      <h3 className='mainHeader'>Pre-tech work experience</h3>
+      <h3 className='mainHeader pre-tech-header'>Pre-tech work experience</h3>
       <div className="personal-projects-container">
         {projects.map((project, index) => (
           <div key={index} className="personal-project-card">
